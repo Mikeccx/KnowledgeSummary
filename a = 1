@@ -1,0 +1,29 @@
+  今天偶然刷到一道题目，
+  
+    
+    (function(){
+
+    var name;
+
+    if(typeof name=== 'undefined'){
+
+    name='Jack';
+
+    console.log('Goodbye'+name);
+
+    }
+
+    else
+
+    {
+    var name="World!";
+    console.log('hello'+name);
+
+    }
+
+    }
+
+    )();
+    
+    删除var name会报错！其内name=‘jack’的全局变量并不会变量提升。我猜测此类全局变量可能是在window上通过赋值添加属性。
+    
