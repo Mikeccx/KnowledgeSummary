@@ -1,0 +1,6 @@
+之前一些基本的dom操作的都挺熟悉的，但是一直没怎么使用修改样式表中的某一条属性。于是百度到一些解决方案。
+1.      // var sheet=document.styleSheets[0].cssRules[4]
+        // sheet.style.transform = 'rotate(100deg)'
+        找到该样式表的位置，添加属性
+2.document.styleSheets[0].addRule('.cyclepoint-after','transform:rotate(100deg)');
+   直接添加规则
